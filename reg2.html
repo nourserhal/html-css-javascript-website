@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="project.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body2>
+        <div class="wrapper">
+            <form action="">
+                <h1>New Account</h1>
+  <label for="username">Username <span>*</span></label>
+  <input type="text" id="username" name="username" required>
+  <small>The password must have at least 8 characters, at least 1 digit(s), at least 1 lowercase letter(s), at least 1 uppercase letter(s), at least 1 special character(s) such as *, -, or #</small><br>
+  <label for="password">Password <span>*</span></label>
+  <input type="password" id="password" name="password" required>
+  
+  <label for="email">Email address <span>*</span></label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="email_again">Email (again) <span>*</span></label>
+  <input type="email" id="email_again" name="email_again" required>
+  
+  <label for="first_name">First name <span>*</span></label>
+  <input type="text" id="first_name" name="first_name" required>
+  
+  <label for="last_name">Last name <span>*</span></label>
+  <input type="text" id="last_name" name="last_name" required>
+  
+  <label for="city">City/town</label>
+  <input type="text" id="city" name="city">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="">Select a country</option>
+    <option value="">France</option>
+    <option value="">Syria</option>
+    <option value="">Lebanon</option>
+    <option value="">Canada</option>
+    <option value="">Dalhoon</option>
+    <option value="">Mazbood</option>
+    <option value="">Warde</option>
+
+  </select><br><br>
+  <button type="button" onclick="Signin()"  class="nex">Create new account</button>
+  <button type="button" ><a href="reg1.html">Cancel</a></button>
+</form>
+        </div>
+        <script>
+            function Signin(){
+                var username= document.getElementById("username").value;
+                var email= document.getElementById("email").value;
+                var email_again= document.getElementById("email_again").value;
+                var password= document.getElementById("password").value;
+                var first_name= document.getElementById("first_name").value;
+                var last_name= document.getElementById("last_name").value;
+
+                if(username==""){
+                    alert("please enter ur username");
+                    return;
+                }
+                if(password==""){
+                    alert("please enter ur password");
+                    return;
+                }
+                if(email==""){
+                    alert("please enter ur email address");
+                    return;
+                }
+                if(email_again==""){
+                    alert("please enter ur email again");
+                    return;
+                }
+                if(first_name==""){
+                    alert("please enter ur first_name");
+                    return;
+                }
+                if(last_name==""){
+                    alert("please enter ur last_name");
+                    return;
+                }
+                if(pass=="1234"){
+                    window.location.href="reg.html"
+                }
+                else{
+                    alert("incorret password");
+                }
+            }
+        </script>
+    </body2>
+</html>

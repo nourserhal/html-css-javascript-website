@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs.css">
+    <title>BitesFood</title>
+</head>
+<body>
+
+    <header style="background-color: rgb(110, 97, 80);">
+        <nav>
+            <div class="logo" style="display: flex;" ><img src="logo0.jpg" style="height: 75px;width: 75px; display: block;margin:0 auto;mix-blend-mode: multiply;">
+                <h3 style="margin: auto;">BITESFOOD</h3></div>
+            <input type="text" placeholder="Search..." class="search-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="reg1.html" class="btn">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="behind-dishes" id="home">
+            <h1 style="margin-top: 0;">WELCOME TO OUR DELICIOUS CORNER</h1>
+            <h2>BEHIND THE DISHES</h2>
+            <div class="carousel">
+                <div class="slides">
+                    <img src="img1.jpg" alt="Delicious Dish">
+                    <img src="img2.jpg" alt="Tasty Dessert">
+                    <img src="img3.jpg" alt="Refreshing Drink">
+                </div>
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+        </section>
+
+        <section class="about" id="aboutus">
+            <h2 style="text-align: center;">ABOUT US</h2><br>
+            <div class="cards">
+                <img src="a5.jpg" alt="a1"style="height: 320px;width: 320px;">
+                <div class="card">
+                    <h3>TRADITIONAL & MODERN</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <br>
+                    <a href="#" style="cursor: pointer;background-color: #ff7f50;padding: 10px 20px;border-radius: 5px; color: white;">READ MORE</a></div>
+                    <img src="a3.jpg" alt="a2" style="height: 320px;width: 320px;">
+                
+            </div>
+        </section>
+
+        <section class="special" id="menu">
+    <h2 style="text-align: center;">OUR SPECIAL</h2>
+    <diva class="menu-container" style="display: flex;">
+        <img src="img1.jpg" alt="Delicious Dish" style="width: 55%;height: 400px;">
+        <ul><h3 style="font-weight: 50;">
+
+            <li>Fines Tartare Steak ------------------------------------$50</li>
+            <li>Creamy Chicken Soup ------------------------------------$60</li>
+            <li>Boiled Eggs on Toast -----------------------------------$120</li>
+            <li>Best Roasted Rumsteak ----------------------------------$150</li>
+            <li>Risotto & Mushrooms ------------------------------------$90</li>
+        </ul></h3></diva>
+</section>
+        <section id="contactus"style="justify-content: center;text-align: center;">
+            <div class="contact">
+           <h2 class="special-heading">Contact Us</h2>
+           <p>We are born to create</p>
+           <div >
+            <p class="label">Let's have a lovely meal :)  </p>
+            <a href="##" class="link">restaurant@gmail.com</a>
+               <div class="social">
+                <p>Show us your love on Socials <3: </p>
+
+                   <a class="social-media" href="##" target="_blank">
+                       <ion-icon name="logo-instagram"></ion-icon>
+                   </a>
+                   <a class="social-media" href="##" target="_blank">
+                       <ion-icon name="logo-facebook"></ion-icon>
+                   </a>
+                   <a class="social-media" href="#" target="_blank">
+                       <ion-icon name="logo-twitter"></ion-icon>
+                   </a>
+                   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+               </div>
+           </div>
+        </section>
+    </main>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slides img');
+
+        function showSlide(n) {
+            index = (n + slides.length) % slides.length;
+            document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(index + 1);
+        }
+
+        function prevSlide() {
+            showSlide(index - 1);
+        }
+
+        showSlide(index);
+    </script>
+
+</body>
+</html>

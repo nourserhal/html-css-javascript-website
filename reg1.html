@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="project.css">
+    </head>
+    <body2>
+        <div class="wrapper" style="color: black;">
+            <form action="">
+                <h1>Log In</h1>
+                <div class="input-box">
+                    <input type="text" id="email" placeholder="Username or email" required>     
+                </div>
+                <div class="input-box">
+                    <input type="text" id="pass" placeholder="Password" required>
+                </div>
+                <div class="nex-bac">
+                    <button type="button" onclick="login()"  class="nex">Log In</button>
+                </div>
+                <div class="nex-bac">
+                    <br>
+                    <a href="pass1.html"><small>Lost Password?</small></a>
+                </div>
+                <hr><br>
+                    <h3>Is this your firdt time here?</h3>
+                    <small>For full access to this Website, you first need to create an account.</small>
+                <div class="nex-bac">
+                    <br><br>
+                    <button class="nex"><a href="reg2.html">Create new account</a></button>
+                </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            function login(){
+                var email= document.getElementById("email").value;
+                var pass= document.getElementById("pass").value;
+                if(email==""){
+                    alert("ollyte enter ur email");
+                    return;
+                }
+                if(pass==""){
+                    alert("ollyte enter ur pass");
+                    return;
+                }
+                if(pass=="1234"){
+                    window.location.href="reg.html"
+                }
+                else{
+                    alert("incorret password");
+                }
+            }
+        </script>
+    </body>
+</html>

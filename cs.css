@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ff7f50;
+    border-radius: 5px;
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .btn {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.behind-dishes {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
+}
+
+.about, .special {
+    padding: 40px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
