@@ -1,13 +1,32 @@
-# HTML, CSS & JavaScript Website
+# Restaurant Website
 
-Responsive frontend website developed using HTML, CSS, and JavaScript.
+A responsive restaurant website developed using HTML, CSS, and JavaScript with multiple user interface pages and interactive design elements.
 
 ## Features
-- Clean and responsive design
-- Interactive elements using JavaScript
-- Works on desktop and mobile screens
 
-## Technologies
-- HTML
-- CSS
+- Responsive website layout
+- Home page design
+- Login interface
+- Registration pages
+- Dashboard interface
+- Password recovery page
+- Interactive navigation
+- User-friendly UI design
+
+## Technologies Used
+
+- HTML5
+- CSS3
 - JavaScript
+
+## Project Structure
+
+- HTML pages for website structure
+- CSS files for styling and responsive design
+- JavaScript for interactive functionality
+
+## Developer
+
+Nour Serhal  
+Computer Science Undergraduate  
+Full-Stack Web & Mobile Developer
